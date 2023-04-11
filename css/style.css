@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+.bg1{
+    width:100%;
+    height: auto;
+    opacity: 50%;
+    margin-top: -5vh;
+    z-index: -1;
+    /* object-fit: fill; */
+}
+.logo{
+    border-radius: 100%;
+    position: absolute;
+    width: 15vw;
+    /* min-width: 100px; */
+    left: 42.5vw;
+    top: 18.5vw;
+    /* align-items: center; */
+}
+.logodiv{
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*@media screen and (max-width:790px) {
+    .bg1{
+        top:-5%;
+    }
+}*/
