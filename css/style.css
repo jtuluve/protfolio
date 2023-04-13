@@ -3,6 +3,7 @@
 @font-face {
     font-family: 'adelia';
     src: url('../media/fonts/adelia.otf') format('opentype');
+    font-weight: bold;
 
 }
 /*fonts end*/
