@@ -1,18 +1,18 @@
-html, body {margin: 0;height: 100%;/* overflow-y: hidden; */background-color: #857971;transition: all 0.5s;}
-/*.bg1{
-    width: 100%;
-    height: auto;
-    opacity: 50%;
-    margin-top: -35px;
-    z-index: -1;
-    object-fit: fill; 
-}
-*/
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@500&display=swap');
 
+/*fonts end*/
+:root{
+    --blue1: #0B2447;
+    --blue2:#19376D;
+    --blue3: #576CBC;
+    --blue4: #A5D7E8;
+}
+html, body {margin: 0;height: 100%;/* overflow-y: hidden; */background-color: var(--blue1);transition: all 0.5s;}
 .nav{
     width: 100vw;
     display: flex;
-    background-color: purple;
+    background-color: var(--blue2);
     height: 25px;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -41,7 +41,10 @@ html, body {margin: 0;height: 100%;/* overflow-y: hidden; */background-color: #8
     /* overscroll-behavior-y: none; */
 }
 .bgvid{
-    width: 100%;
+    object-fit: fill;
+    width: 100vw;
+    height: 100vh;
+    max-height: 56.25vw;
     /* height: 100%; */
     text-align:center;
     opacity: 30%;
@@ -52,14 +55,49 @@ html, body {margin: 0;height: 100%;/* overflow-y: hidden; */background-color: #8
     width: 15vw;
     /* min-width: 100px; */
     left: 42.5vw;
-    top: 18.5vw;
+    top: 15.5vw;
     /* align-items: center; */
 }
 .myname{
     position: absolute;
+    font-family: 'Anuphan', sans-serif;
     left: 50%;
     transform: translate(-50%,-50%);
     top: 33.5vw;
+    color: turquoise;
+    text-shadow: 0 0 5px BLACK;
+    font-size: 5vw;
+}
+.myname::before{
+    content: "Hi, I'm";
+    text-align: center;
+    position: absolute;
+    font-family: cursive;
+    color: aliceblue;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:150%;
+    font-size: 2.3vw;
+    top: -1vw;
+}
+.namedivider{
+    border-width: 1px;
+    border-color: aliceblue;
+    width: 30vw;
+    position: absolute;
+    top: 38.7vw;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 0 5px BLACK;
+}
+.afternamepara{
+    color: aliceblue;
+    position: absolute;
+    top: 39vw;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.6vw;
+    text-shadow: 0 0 5px BLACK;
 }
 /*@media screen and (max-width:790px) {
     .bg1{
