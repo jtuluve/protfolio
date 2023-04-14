@@ -9,40 +9,46 @@
     <link rel="stylesheet" href="https://static.fontawesome.com/css/fontawesome-app.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <script defer src="./js/index.js"></script>
     <title>J Tuluve Protfolio</title>
 </head>
 
 <body>
-    <div class="nav">
+     <div class="nav" id="nav">
         <h3 class="namesign"><a href="./index.html"><span class="j">j</span></span>.tuluv<span class="e">e</span></a>
         </h3>
         <div class="menu">
-            <div class="navchild">
-                <i class="far fa-user icon"></i>
-                <h3 class="about menutitle">about me</h3>
-            </div>
-            <div class="navchild">
-                <i class="fas fa-code icon"></i>
-                <h3 class="about menutitle">projects</h3>
-            </div>
-            <div class="navchild">
-                <i class="far fa-dumbbell icon"></i>
-                <h3 class="about menutitle">skills</h3>
-            </div>
-            <div class="navchild">
-                <i class="far fa-paper-plane icon"></i>
-                <h3 class="about menutitle">get in touch</h3>
-            </div>
+            <h3 class="menutitle">
+                <i class="far fa-user icon"></i><span>about me</span>
+            </h3>
+            <h3 class="menutitle">
+                <i class="fas fa-code icon"></i><span>projects</span>
+            </h3>
+            <h3 class="menutitle">
+                <i class="far fa-dumbbell icon"></i><span>skills</span>
+            </h3>
+            <h3 class="menutitle">
+                <i class="far fa-paper-plane icon"></i><span>get in touch</span>
+            </h3>
         </div>
     </div>
+
     <div class="maindiv">
         <video src="media/videos/bg.mp4" class="bgvid" autoplay loop muted></video>
-        <img class="logo" src="media/images/logo.jpg">
-        <h1 class="myname" id="myname"> Jnanesh</h1>
-        <hr class="namedivider">
-        <p class="afternamepara">Noob Web Designer, Developer</p>
+
+        <div class="hidden" style="transition: all 1s ease;position:absolute;width:100%;height:auto;top:0;">
+            <img class="logo" src="media/images/logo.jpg" class="hidden">
+            <h1 class="myname" id="myname"> Jnanesh</h1>
+            <hr class="namedivider">
+            <p class="afternamepara">Noob Web Designer, Developer</p>
+        </div>
     </div>
-    <script defer src="js/index.js"></script>
+    <div class="page">
+        <div class="pagehead">
+            <i class="fas fa-code title-icon"></i>
+            <h1 class="pagetitle">about</h1>
+        </div>
+    </div>
 </body>
 
 </html>
