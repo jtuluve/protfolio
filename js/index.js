@@ -1,6 +1,7 @@
-/*function sleep(ms) {
+function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
+  /*
   async function trial2() {
     temptext = text + alph[j];
     textvar.innerHTML = temptext;
@@ -40,3 +41,31 @@ function namee(){
   }
   namee();
   */
+  let oldValue = 0
+  let newValue = 0
+  window.addEventListener('scroll', (e) => {
+    newValue = window.pageYOffset;
+    if (oldValue < newValue) {
+      document.getElementById("nav").style.top = "-4.8vw";
+      console.log("Up");
+    } else if (oldValue > newValue) {
+      document.getElementById("nav").style.top = "0";
+      console.log("Down");
+    }
+    oldValue = newValue;
+  });
+const observer  = new IntersectionObserver((entries) =>{
+
+  entries.forEach( async (entry) =>{
+    console.log (entry)
+    if (entry.isIntersecting) {
+    entry.target.classList.remove('hidden') ;
+    entry.target.classList.add('show');
+    await sleep(50);
+    } else {
+    //entry.target.classList.remove
+    }; 
+});
+  });
+  setTimeout(()=>{const hiddenE1ements = document.querySelectorAll( '.hidden') ;
+  hiddenE1ements.forEach( (el) => observer.observe(el));}, 500)
