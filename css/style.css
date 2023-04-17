@@ -1,24 +1,37 @@
 /*fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@500&display=swap');
+
 @font-face {
     font-family: 'adelia';
     src: url('../media/fonts/adelia.otf') format('opentype');
     font-weight: bold;
 
 }
+
 /*fonts end*/
-:root{
+:root {
     --blue1: #0B2447;
-    --blue2:#19376D;
+    --blue2: #19376D;
     --blue3: #576CBC;
     --blue4: #A5D7E8;
 }
-html, body {margin: 0;height: 100%;/* overflow-y: hidden; */background-color: var(--blue1);transition: all 0.5s ease;}
-.nav{
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    /* overflow-y: hidden; */
+    background-color: var(--blue1);
+    transition: all 0.5s ease;
+}
+
+
+.nav {
+    background-size: 100vw 50px;
     width: 100vw;
     /* max-width: 1000px; */
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     display: flex;
     background-color: var(--blue2);
     /* height: 70px; */
@@ -28,57 +41,68 @@ html, body {margin: 0;height: 100%;/* overflow-y: hidden; */background-color: va
     position: fixed;
     top: 0;
     z-index: 1;
-    transition: all 0.5s ease;
 }
-.namesign{
+
+.namesign {
     font-family: 'adelia';
     color: var(--blue4);
-    margin-left: 5vw;
+    margin-left: clamp(50px, 6vw, 15vw);
     font-size: 17px;
     margin-top: 18px;
     margin-bottom: 18px;
 }
-.namesign a{
+
+.namesign a {
     text-decoration: none !important;
     color: inherit;
     cursor: pointer;
 }
-.namesign a:link, a:visited,  a:hover, a:active{
+
+.namesign a:link,
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
     color: inherit;
-    cursor:pointer;
-    
+    cursor: pointer;
+
 }
-.namesign span.j{
-    font-family: 'adelia' ;
+
+.namesign span.j {
+    font-family: 'adelia';
     font-feature-settings: "ss02";
 }
-.namesign span.e{
-    font-family: 'adelia' ;
+
+.namesign span.e {
+    font-family: 'adelia';
     font-feature-settings: "ss01";
 }
-.menu{
+
+.menu {
     /* right: 3vw; */
     height: 100%;
     display: flex;
     /* position: absolute; */
     margin-right: 30px;
 }
-.icon{
+
+.icon {
     margin-top: 1.5vw;
     font-size: 17px;
     color: var(--blue4);
     margin-right: 9px;
     margin-top: 0;
 }
-.menutitle{
+
+.menutitle {
     display: inline;
     margin-left: 25px;
     font-size: 17px;
     color: var(--blue4);
     font-weight: lighter;
 }
-.maindiv{
+
+.maindiv {
     align-items: center;
     width: 100vw;
     /* height: 100vh; */
@@ -88,49 +112,56 @@ html, body {margin: 0;height: 100%;/* overflow-y: hidden; */background-color: va
     overflow-x: hidden;
     /* overscroll-behavior-y: none; */
 }
-.bgvid{
+
+.bgvid {
     object-fit: fill;
     width: 100vw;
     height: 100vh;
     max-height: 56.25vw;
     /* height: 100%; */
-    text-align:center;
+    text-align: center;
     opacity: 30%;
+    position: relative;
 }
-.logo{
+
+.logo {
     border-radius: 100%;
+    border: 3px solid var(--blue4);
     position: absolute;
     width: 15vw;
     /* min-width: 100px; */
     left: 42.5vw;
     top: 15.4vw;
-    -webkit-filter: drop-shadow(0px 0px 9px rgba(64,224,208, 0.5));
-    filter: drop-shadow(0px 0px 9px rgba(64,224,208, 0.5));
+    -webkit-filter: drop-shadow(0px 0px 9px rgba(64, 224, 208, 0.5));
+    filter: drop-shadow(0px 0px 9px rgba(64, 224, 208, 0.5));
     /* align-items: center; */
 }
-.myname{
+
+.myname {
     position: absolute;
     font-family: 'Anuphan', sans-serif;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 33.5vw;
     color: turquoise;
     text-shadow: 0 0 5px BLACK;
     font-size: 5vw;
 }
-.myname::before{
+
+.myname::before {
     content: "Hi, I'm";
     text-align: center;
     position: absolute;
     font-family: cursive !important;
     color: aliceblue;
     left: 50%;
-    transform: translate(-50%,-50%);
-    width:150%;
+    transform: translate(-50%, -50%);
+    width: 150%;
     font-size: 2.3vw;
     top: -1vw;
 }
-hr.namedivider{
+
+hr.namedivider {
     border-width: 0.15vw;
     border-color: aliceblue;
     /* width: 30vw; */
@@ -138,46 +169,58 @@ hr.namedivider{
     position: absolute;
     top: 39vw;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.afternamepara{
+
+.afternamepara {
     color: aliceblue;
     position: absolute;
     top: 39vw;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 2.6vw;
     text-shadow: 0 0 5px BLACK;
 }
 
 
-.hidden{
+.hidden {
     opacity: 0;
     transition: all 1s ease;
     position: inherit;
-    margin-top:3vw;
-    top:7vw;
+    margin-top: 3vw;
+    top: 7vw;
 }
-.show{
+
+.show {
     opacity: 1;
-    top:0;
+    top: 0;
 }
 
 
 /* page style*/
-.page{
+.page {
     width: 90vw;
     background-color: var(--blue2);
     margin-left: auto;
     margin-right: auto;
     margin-top: 5vw;
 }
-.pagetitle{
+
+.pagetitle {
     display: inline;
+    color: var(--blue4);
+    font-size: 34px;
+}
+.title-icon{
+    margin-top: auto;
+    color: var(--blue4);
+    margin-right:15px;
+    font-size: 28px;
+    margin-bottom: auto;
 }
 
 @media screen and (max-width:790px) {
-    .menutitle span{
+    .menutitle span {
         display: none;
     }
 }
