@@ -31,6 +31,7 @@ body {
     width: 100vw;
     /* max-width: 1000px; */
     left: 50%;
+    height: 58px;
     transform: translate(-50%, 0%);
     display: flex;
     background-color: var(--blue2);
@@ -93,15 +94,55 @@ a:active {
     margin-right: 9px;
     margin-top: 0;
 }
-
+.abouticon{
+    margin-top: -5px;
+    margin-right: 5px;
+}
+.codeicon{
+    height: 32px;
+    width: auto;
+    margin-right: 7px;
+    margin-top: -5px;
+}
+.skillicon{
+    height: 15px;
+    /* width: auto; */
+    margin-right: 7px;
+    margin-top: 2px;
+}
+.getintouchicon{
+    height: 18px;
+    /* width: auto; */
+    margin-right: 7px;
+    margin-top: 2px;
+}
 .menutitle {
     display: inline;
     margin-left: 25px;
     font-size: 17px;
     color: var(--blue4);
     font-weight: lighter;
+    display: flex;
 }
-
+.menutitle:hover .abouticon path:nth-child(2) {
+    transform: translate(0px, -2px);
+}
+.menutitle:hover .codeicon path:nth-child(3){
+    transform: translate(-1.5px, 0px);
+}
+.menutitle:hover .codeicon path:nth-child(2){
+    transform: translate(1.5px, 0px);
+}
+.menutitle:hover .skillicon{
+    transform: translate(0px, -2px);
+}
+.menutitle:hover span{
+    filter: drop-shadow(0px 0px 3px rgba(64, 224, 208, 0.686));
+    color: azure;
+}
+.menutitle:hover .getintouchicon{
+    transform: translate(2px, -3px);
+}
 .maindiv {
     align-items: center;
     width: 100vw;
