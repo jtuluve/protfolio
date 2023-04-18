@@ -46,7 +46,12 @@ function namee(){
   window.addEventListener('scroll', (e) => {
     newValue = window.pageYOffset;
     if (oldValue < newValue) {
-      document.getElementById("nav").style.top = "-4.8vw";
+      if(window.innerWidth>=555){
+        document.getElementById("nav").style.top = "-50px";
+      }else{
+      document.getElementById("nav").style.top = "-47px";
+        
+      }
       console.log("Up");
     } else if (oldValue > newValue) {
       document.getElementById("nav").style.top = "0";
