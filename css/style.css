@@ -21,7 +21,7 @@ body {
     margin: 0;
     height: 100%;
     /* overflow-y: hidden; */
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     background-color: var(--blue1);
     transition: all 0.5s ease;
 }
@@ -317,10 +317,10 @@ a:active {
         /* margin-right: 0; */
     }
     .namelogoflex{
-        margin-top: 125px;
+        margin-top: 105px;
     }
     .logo{
-        width:16%;
+        width: 19vw;
     }
     .myname{
         font-size: 30px;
