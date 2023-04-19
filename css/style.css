@@ -226,12 +226,12 @@ body {
 .myname::after{
     content: "";
     /* position: relative; */
-    /* transform: translate(-15%, -50%); */
+    transform: translate(-5%, -50%);
     display: block;
-    width: 30vw;
+    width: 110%;
     margin-left: auto;
     margin-right: auto;
-    height: 0.2vw;
+    height: max(0.2vw,1px);
     background-color: aliceblue;
 }
 
@@ -419,7 +419,7 @@ body {
         display: none;
     }
 }
-@media screen and (max-width:555px) {
+@media screen and (max-width: 555px) {
     .nav{
         display: flex;
         flex-direction: column;
@@ -451,20 +451,20 @@ body {
     }
     .logo{
         width: 18%;
-        min-width: 70px;
+        min-width: 116px;
     }
     .myname{
-        font-size: 200%;
+        font-size: max(200%,40px);
     }
     .myname::before{
-        font-size: 50%;
+        font-size: 44%;
     }
     .afternamepara{
-        font-size: 100%;
+        font-size: max(100%,17px);
     }
     .bgvid{
         width: 100%;
-        height: 95vh;
+        height: 84vh;
     }
     .pagecontent p{
         font-size: 12px;
