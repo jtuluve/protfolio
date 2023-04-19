@@ -160,9 +160,9 @@ body {
 
 .bgvid {
     object-fit: fill;
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
-    max-height: 56.25vw;
+    /* max-height: 56.25vw; */
     /* height: 100%; */
     text-align: center;
     opacity: 30%;
@@ -171,11 +171,12 @@ body {
 
 .logo {
     border-radius: 100%;
-    border: 0.2vw solid var(--blue4);
+    border: max(2px, 0.2vw) solid var(--blue4);
     position: relative;
-    width: 12%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 13%;
+    min-width: 112px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     margin-bottom: 1vw;
     /* min-width: 100px; */
     /* left: 42.5vw; */
@@ -190,13 +191,14 @@ body {
     flex-direction: column;
     position: absolute;
     margin-top: 180px;
+    align-items: center;
 }
 
 .myname {
     position: relative;
     font-family: 'Anuphan', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     margin-bottom: 0.2vw;
     margin-top: 0.2vw;
     text-align: center;
@@ -237,8 +239,8 @@ body {
 .afternamepara {
     color: aliceblue;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     margin-top: 1vw;
     /* top: 180px; */
     /* left: 50%; */
@@ -405,7 +407,7 @@ body {
         margin-top: 25px;
     }
     .pagecontent{
-        width: 85%;
+        width: 95%;
         max-width: 850px;
         margin-top: 25px;
         text-align: justify;
@@ -442,23 +444,27 @@ body {
         /* margin-right: 0; */
     }
     .namelogoflex{
-        margin-top: 105px;
+        margin-top: 35vh;
+    }
+    .namelogoflex > *{
+        margin-top: max(2vw,10px);
     }
     .logo{
-        width: 19vw;
+        width: 18%;
+        min-width: 70px;
     }
     .myname{
-        font-size: 30px;
+        font-size: 200%;
     }
     .myname::before{
-        font-size: 15px;
+        font-size: 50%;
     }
     .afternamepara{
-        font-size: 15px;
+        font-size: 100%;
     }
     .bgvid{
         width: 100%;
-        height: 10000vh;
+        height: 95vh;
     }
     .pagecontent p{
         font-size: 12px;
