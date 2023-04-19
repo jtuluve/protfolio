@@ -61,14 +61,10 @@ body {
     cursor: pointer;
 }
 
-.namesign a:link,
-a:visited,
-a:hover,
-a:active {
+.namesign a:is(:hover, :active, :focus) {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-
 }
 
 .namesign span.j {
@@ -222,7 +218,7 @@ a:active {
     /* left: 50%; */
     /* transform: translate(0%, -50%); */
     width: 100%;
-    font-size: 15px;
+    font-size: 3vw;
     top: -1vw;
 }
 .myname::after{
@@ -268,8 +264,9 @@ a:active {
 
 /* page style*/
 .page {
-    width: 90vw;
-    background-color: var(--blue2);
+    /* width: 90vw; */
+    /* background-color: var(--blue2); */
+    padding: 25px;
     margin-left: auto;
     margin-right: auto;
     height: 50vw;
@@ -279,16 +276,48 @@ a:active {
 .pagetitle {
     display: inline;
     color: var(--blue4);
-    font-size: 34px;
+    font-size: 3.3vw;
+    padding: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.pagetitle::after{
+    content: "";
+    display: inline-block;
+    background-color: #295db9;
+    width: 50vw;
+    margin-left: 1.5vw;
+    height: 3px;
 }
 .title-icon{
     margin-top: auto;
     color: var(--blue4);
     margin-right:15px;
-    font-size: 28px;
+    font-size: 2.5vw;
+    margin-top: auto;
     margin-bottom: auto;
 }
-
+.pagecontent{
+    color: #7ea5a3;
+}
+.pagecontent p{
+    font-size: 17px;
+    line-height: 1.7;
+}
+.linkk{
+    text-decoration: none;
+    cursor: pointer;
+    color: #28ce5e;
+}
+.linkk:hover:after {
+    content: "";
+    /* display: flex; */
+    position: absolute;
+    height: 3px;
+    background-color: aliceblue;
+    width: 5vw;
+    left: 0;
+}
 @media screen and (max-width:790px) {
     .menutitle span {
         display: none;
@@ -307,6 +336,8 @@ a:active {
     }
     .namesign{
         margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .navbgcover{
         height: 90px;
@@ -324,6 +355,9 @@ a:active {
     }
     .myname{
         font-size: 30px;
+    }
+    .myname::before{
+        font-size: 15px;
     }
     .afternamepara{
         font-size: 15px;
