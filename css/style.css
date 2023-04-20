@@ -110,7 +110,7 @@ img{
     height: 15px;
     /* width: auto; */
     margin-right: 7px;
-    margin-top: 4px;
+    margin-top: 3px;
     transition: all 0.2s ease-in;
 }
 .getintouchicon{
@@ -122,7 +122,7 @@ img{
 .menutitle {
     display: inline;
     margin-left: 25px;
-    font-size: 17px;
+    font-size: 18px;
     color: var(--blue4);
     font-weight: lighter;
     display: flex;
@@ -346,7 +346,7 @@ img{
 .linkk:hover:after{
     content: "";
     position: absolute;
-    height: 2px;
+    height: 1px;
     background-color: azure;
     width: 100%;
     left: 0;
@@ -537,6 +537,11 @@ img{
     -webkit-filter: drop-shadow(0px 0px 0.5em #00ff53);
     filter: drop-shadow(0px 0px 0.5em #00ff53);
 }
+.skills-line{
+    color: #67759b;
+    font-size: larger;
+    margin-left: 0.4em;
+}
 .skills-svg{
     display: flex;
     margin-top: 3em;
@@ -609,7 +614,7 @@ img{
 }
 
 .css-svg::after{
-    content: "html";
+    content: "css";
     display: block;
     width: 100%;
     font-family: 'Sofia Sans Condensed', sans-serif;
@@ -717,7 +722,7 @@ img{
 }
 
 .bot-svg::after{
-    content: "bot";
+    content: "bots";
     display: block;
     width: 100%;
     font-family: 'Sofia Sans Condensed', sans-serif;
@@ -769,7 +774,38 @@ img{
     top: 100%;
     z-index: 0;
 }
-
+.social-icons{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 2vw;
+}
+.social-icon{
+    width: 2.2em;
+    margin: 1em;
+    transition: margin-top 0.2s ease;
+}
+.social-icon:hover{
+    margin-top:-0.05em;
+}
+.social-icon:nth-child(1):hover svg{
+    fill: rgb(184 184 184);
+}
+.social-icon:nth-child(2) .i{
+    fill:#dbfffb;
+}
+.social-icon:nth-child(2):hover .i{
+    fill: rgb(234 95 193);
+}
+.social-icon:nth-child(3):hover .t{
+    fill: rgb(34 184 254);
+}
+.social-icon:nth-child(4) .e{
+    stroke: #dbfffb;
+}
+.social-icon:nth-child(4):hover .e{
+    stroke: rgb(255, 255, 255);
+}
 
 /* media sorted based on width higher to lower*/
 @media screen and (max-width:1262px) {
