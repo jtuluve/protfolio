@@ -60,7 +60,7 @@ img{
     color: var(--blue4);
     margin-left: clamp(50px, 6vw, 15vw);
     font-size: 17px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 18px;
     text-align: center;
 }
@@ -96,9 +96,8 @@ img{
 }
 
 .abouticon{
-    margin-top: -5px;
     margin-right: 5px;
-    width: 25px;
+    width: 26px;
 }
 .codeicon{
     height: 32px;
@@ -127,6 +126,11 @@ img{
     font-weight: lighter;
     display: flex;
     flex-wrap: nowrap;
+}
+.menutitle > a{
+    text-decoration: none;
+    color: inherit;
+    display: contents;
 }
 .abouticon path:nth-child(2){
     transition: all 0.2s ease-in;

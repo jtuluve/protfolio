@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="./media/images/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
 
     <link rel="stylesheet" href="https://static.fontawesome.com/css/fontawesome-app.css">
     <link rel="stylesheet" href="css/style.css">
-
     <script defer src="./js/index.js"></script>
     <title>J Tuluve Portfolio</title>
 </head>
@@ -20,6 +20,7 @@
         </h3>
         <div class="menu">
             <h3 class="menutitle">
+                <a href="#about">
                 <svg class="abouticon" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"
                     stroke="#000000">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -34,8 +35,10 @@
                             stroke="#A5D7E8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
                     </g>
                 </svg><span>about me</span>
+            </a>
             </h3>
             <h3 class="menutitle">
+                <a href="#projects">
                 <svg class="codeicon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -49,8 +52,10 @@
                             stroke="#A5D7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </g>
                 </svg><span>projects</span>
+                </a>
             </h3>
             <h3 class="menutitle">
+                <a href="#skills">
                 <svg class="skillicon" version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 63 32"
                     enable-background="new 0 0 63 32" xml:space="preserve" fill="#000000">
@@ -77,8 +82,10 @@
                         </g>
                     </g>
                 </svg><span>skills</span>
+                </a>
             </h3>
             <h3 class="menutitle">
+                <a href="#contact">
                 <svg class="getintouchicon" fill="#A5D7E8" viewBox="0 0 32 32" version="1.1"
                     xmlns="http://www.w3.org/2000/svg" stroke="#A5D7E8" stroke-width="0.608">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -89,6 +96,7 @@
                         </path>
                     </g>
                 </svg><span>get in touch</span>
+                </a>
             </h3>
         </div>
     </div>
@@ -107,7 +115,7 @@
         <div class="page">
             <div class="pagehead">
                 <i class="far fa-user title-icon"></i>
-                <h1 class="pagetitle">about me</h1>
+                <h1 class="pagetitle" id="about">about me</h1>
             </div>
             <div class="pagecontentflex">
                 <div class="me">
@@ -137,7 +145,7 @@
     </div>
     <div class="page">
         <div style="max-width:1000px;margin-left:auto;margin-right:auto;">
-            <div class="pagehead">
+            <div class="pagehead" id="peojects">
                 <i class="far fa-code title-icon"></i>
                 <h1 class="pagetitle">projects</h1>
             </div>
@@ -172,7 +180,7 @@
                 <div class="project-details">
                     <h1>Anywhere Tulu For&nbsp;Developers</h1>
                     <p>For web developers to use Tulu Script in their website by adding 1 line of code.</p>
-                    <a class="soon" href="">releasing soon..</a>
+                    <a class="check" href="https://github.com/jtuluve/anywhere-tulu">check it out</a>
                 </div>
             </div>
             <div class="projectcard">
@@ -189,9 +197,9 @@
         <div style="max-width:1000px;margin-left:auto;margin-right:auto;">
             <div class="pagehead">
                 <i class="far fa-dumbbell title-icon"></i>
-                <h1 class="pagetitle">skills</h1>
+                <h1 class="pagetitle" id="skills">skills</h1>
             </div>
-            <p class="skills-line">Here are some of the skills I have and some of the languages and tools I use.</p>
+            <p class="skills-line">Here are some of my skills and some of the languages and tools I use.</p>
             <div class="skills-svg">
                 <div class="skills-child github-svg">
                     <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -399,7 +407,7 @@
     </div>
     <div style="max-width: 1000px;margin-left:auto;margin-right:auto;">
         <div class="page">
-            <div class="pagehead">
+            <div class="pagehead" id="contact">
                 <i class="far fa-paper-plane title-icon"></i>
                 <h1 class="pagetitle">get in touch</h1>
             </div>
