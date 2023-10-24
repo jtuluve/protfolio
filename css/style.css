@@ -20,11 +20,12 @@
 html,
 body {
     width: 100vw;
-    /* overflow: hidden; */
+    overflow-x: hidden;
     padding: 0;
     font-family: sans-serif;
     background-color: var(--blue1);
     transition: all 0.5s ease;
+    margin: 0;
 }
 
 /* style to overcome styles from fontawesome*/
@@ -42,7 +43,6 @@ img{
     width: 100vw;
     /* max-width: 1000px; */
     left: 50%;
-    height: 58px;
     transform: translate(-50%, 0%);
     display: flex;
     background-color: var(--blue2);
@@ -263,8 +263,6 @@ img{
     opacity: 0;
     transition: all 1s ease;
     position: inherit;
-    margin-top: 3vw;
-    top: 7vw;
 }
 
 .show {
@@ -437,7 +435,7 @@ img{
     align-items: center;
     transition: all 0.4s ease;
 }
-.projectcard > img{
+.projectcard img{
     width: 100%;
     filter: blur(1px) grayscale(1);
     height: 231px;
@@ -466,7 +464,7 @@ img{
     z-index: 1;
     transition: all 0.4s ease;
 }
-.project-details > h1{
+.project-details h1{
     color: #ffffff;
     font-size: 2em;
     position: relative;
@@ -475,7 +473,7 @@ img{
     -webkit-filter: drop-shadow(2px 4px 6px black);
     filter: drop-shadow(2px 5px 4px black);
 }
-.project-details > p{
+.project-details p{
     width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -484,7 +482,7 @@ img{
     line-height: 1.36;
     font-size: 1.25em;
 }
-.project-details > a.check{
+.project-details a.check{
     background-color: #00ff53;
     width: fit-content;
     border: 2px solid black;
@@ -497,7 +495,7 @@ img{
     color: #000000;
     transition: all 0.3s ease;
 }
-.project-details > a.soon{
+.project-details a.soon{
     background-color: #f4ff05;
     width: -moz-fit-content;
     width: fit-content;
@@ -510,8 +508,9 @@ img{
     text-decoration: none;
     color: #000000;
     transition: all 0.3s ease;
+    cursor:not-allowed;
 }
-.project-details > a.working{
+.project-details a.working{
     background-color: #f9b371;
     width: -moz-fit-content;
     width: fit-content;
@@ -524,6 +523,7 @@ img{
     text-decoration: none;
     color: #000000;
     transition: all 0.3s ease;
+    cursor:not-allowed;
 }
 .projectcard:hover > .project-details{
     top:0;
